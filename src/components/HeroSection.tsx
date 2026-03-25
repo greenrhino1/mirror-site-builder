@@ -1,4 +1,4 @@
-const LOGO_URL = "https://irp.cdn-website.com/d54730bd/dms3rep/multi/logo-large-3.gif";
+import heroImg from "@/assets/hero-gold.jpg";
 
 const HeroSection = () => {
   return (
@@ -6,12 +6,12 @@ const HeroSection = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center bg-background"
       style={{
-        backgroundImage: `url(https://irp.cdn-website.com/d54730bd/dms3rep/multi/web-4.jpg)`,
+        backgroundImage: `url(${heroImg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-background/70" />
+      <div className="absolute inset-0 bg-background/60" />
 
       <div className="relative z-10 text-center px-4 flex flex-col items-center gap-4">
         {/* Diamond icon */}
