@@ -1,17 +1,17 @@
-import heroImg from "@/assets/hero-gold.jpg";
-
 const HeroSection = () => {
   return (
     <section
       id="home"
       className="relative min-h-screen flex items-center justify-center bg-background"
       style={{
-        backgroundImage: `url(${heroImg})`,
-        backgroundSize: "cover",
+        backgroundImage: `url(https://irp.cdn-website.com/d54730bd/dms3rep/multi/landing-pic-3.gif)`,
+        backgroundSize: "contain",
         backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
       }}
     >
-      <div className="absolute inset-0 bg-background/60" />
+      <div className="absolute inset-0 bg-background/40" />
 
       <div className="relative z-10 text-center px-4 flex flex-col items-center gap-4">
         {/* Diamond icon */}
