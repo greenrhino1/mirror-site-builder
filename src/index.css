@@ -37,7 +37,6 @@
     --radius: 0rem;
 
     --gold: 48 96% 44%;
-    --gold-text: 48 96% 44%;
 
     --sidebar-background: 0 0% 5%;
     --sidebar-foreground: 0 0% 100%;
@@ -58,17 +57,5 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Lato', sans-serif;
-  }
-}
-
-@layer utilities {
-  .text-gold {
-    color: rgb(221, 195, 4);
-  }
-  .bg-gold {
-    background-color: rgb(221, 195, 4);
-  }
-  .border-gold {
-    border-color: rgb(221, 195, 4);
   }
 }
