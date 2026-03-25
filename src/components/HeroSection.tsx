@@ -2,7 +2,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center bg-background"
+      className="relative min-h-[60vh] md:min-h-screen flex items-center justify-center bg-background"
       style={{
         backgroundImage: `url(https://irp.cdn-website.com/d54730bd/dms3rep/multi/landing-pic-3.gif)`,
         backgroundSize: "cover",
