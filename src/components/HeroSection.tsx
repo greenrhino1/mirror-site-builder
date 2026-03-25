@@ -5,10 +5,9 @@ const HeroSection = () => {
       className="relative min-h-screen flex items-center justify-center bg-background"
       style={{
         backgroundImage: `url(https://irp.cdn-website.com/d54730bd/dms3rep/multi/landing-pic-3.gif)`,
-        backgroundSize: "contain",
+        backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed",
       }}
     >
       <div className="absolute inset-0 bg-background/40" />
