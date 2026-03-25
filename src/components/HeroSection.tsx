@@ -1,28 +1,40 @@
-import heroImg from "@/assets/hero-gold.jpg";
-import mgLogo from "@/assets/mg-logo.png";
+const LOGO_URL = "https://irp.cdn-website.com/d54730bd/dms3rep/multi/logo-large-3.gif";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background */}
-      <img
-        src={heroImg}
-        alt="Gold bars and coins"
-        className="absolute inset-0 w-full h-full object-cover"
-        width={1920}
-        height={1080}
-      />
-      <div className="absolute inset-0 bg-background/60" />
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center bg-background"
+      style={{
+        backgroundImage: `url(https://irp.cdn-website.com/d54730bd/dms3rep/multi/web-4.jpg)`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="absolute inset-0 bg-background/70" />
 
-      {/* Content */}
-      <div className="relative z-10 text-center px-4 flex flex-col items-center gap-6">
-        <img src={mgLogo} alt="MG Logo" className="w-48 md:w-72 h-auto drop-shadow-2xl" />
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-gold-gradient uppercase tracking-wide">
-          Mobile Gold Dealer-Buyer
-        </h1>
+      <div className="relative z-10 text-center px-4 flex flex-col items-center gap-4">
+        {/* Diamond icon */}
+        <svg
+          viewBox="0 0 22 22"
+          className="w-8 h-8 fill-foreground mb-2"
+        >
+          <path d="M10.73.89l-10,10,10,10,10-10ZM7.46,14.19V7.65H14v6.54Z" />
+        </svg>
+
+        <hr className="w-16 border-muted-foreground my-2" />
+
+        <h2
+          className="text-3xl md:text-5xl font-lato font-bold uppercase tracking-wide text-gold"
+          style={{ textShadow: "0 0 10px rgba(0,0,0,0.8)" }}
+        >
+          MOBILE GOLD DEALER-BUYER
+        </h2>
+
         <a
           href="#contact"
-          className="mt-4 inline-block border-2 border-gold px-10 py-3 text-sm font-body font-semibold tracking-widest text-primary hover:bg-primary hover:text-primary-foreground transition-all"
+          className="mt-2 text-sm md:text-base font-bold text-foreground hover:text-gold transition-colors"
+          style={{ textShadow: "0 0 8px rgba(0,0,0,0.8)" }}
         >
           GET QUOTE
         </a>
