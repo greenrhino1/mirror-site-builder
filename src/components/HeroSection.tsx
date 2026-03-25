@@ -1,12 +1,10 @@
-import heroImg from "@/assets/hero-gold.jpg";
-
 const HeroSection = () => {
   return (
     <section
       id="home"
       className="relative min-h-screen flex items-center justify-center bg-background"
       style={{
-        backgroundImage: `url(${heroImg})`,
+        backgroundImage: `url(https://irp.cdn-website.com/d54730bd/dms3rep/multi/web-4.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
